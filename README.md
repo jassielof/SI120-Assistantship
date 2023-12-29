@@ -1,8 +1,8 @@
-# SI-120
+# Ayudantía de Fundamentos de Programación (SI-120)
 
 Ayudantia de fundamentos de programación (2023-2) de la UPSA.
 
-Clases desde el 19 de septiembre, hasta el 16 o 19 de diciembre.
+Clases desde el 19 de septiembre, hasta el 19 de diciembre.
 
 ## Horarios
 
@@ -14,4 +14,4 @@ Clases desde el 19 de septiembre, hasta el 16 o 19 de diciembre.
 
 ## Dudas
 
-Para cualquier duda que tengan se van al apartado de `Issues` y la crean con su titulo y comentario.
+Para cualquier duda que tengan se van al apartado de `Issues`, y la crean con su titulo y comentario.
