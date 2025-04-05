@@ -7,15 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
 
       - name: Setup Cpp (C++ / C)
-        uses: aminya/setup-cpp@v1.4.0
-        with:
-          compiler: llvm
-
-      - name: Compile all C/C++ files
         run: |
-          find actividades/ -name "*.cpp" > files.txt
-          clang++ -std=17 -Wall -Wextra -Werror -o /dev/null @files.txt -j$(nproc)
+          sudo apt-get update
+          sudo apt-get install -y clang parallel
+
+      - name: Compile C++ code
+        run: bash scripts/build.sh

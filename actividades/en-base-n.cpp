@@ -23,5 +23,5 @@ int main() {
     cout << "¿El número " << numero << " está en base " << base << " ? (1 = verdad, 0 = falso):" << endl;
     cout << esBase_n(numero, base) << endl;
 
-    return 0, base;
+    return 0;
 }

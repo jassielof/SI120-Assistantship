@@ -17,12 +17,12 @@ void *modifyArray(int *array, int n) {
         cout << "array val: " << array[i] << endl;
     }
     cout << flush;
-    // return array;
+    return array;
 }
 
 int main() {
     // size as 10
-    int n = 10; 
+    int n = 10;
     // call function to create the array with n size and store it
     int *newArray = createArrayN(n);
     for (int i{}; i < n; i++) {
@@ -33,6 +33,6 @@ int main() {
     for (int i{}; i < n; i++) {
         cout << newArray[i] << endl;
     }
-    
+
     return 0;
 }
