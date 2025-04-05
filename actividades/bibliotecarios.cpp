@@ -389,7 +389,7 @@ void vencerLibro(
         fechaEdicionLibro,
         vecesPrestadasLibro,
         capacidadLibros);
-    
+
     cout << "Fecha para vencer el libro: ";
     string fechaVencimiento;
     cin >> fechaVencimiento;

@@ -1,3 +1,5 @@
-*.*
-!*.cpp
-!*.c
+# Ignore all binary files
+*.bin
+
+# Ignore all Windows executable files
+*.exe

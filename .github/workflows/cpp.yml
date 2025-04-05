@@ -1,0 +1,21 @@
+name: C++ Check
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Cpp (C++ / C)
+        uses: aminya/setup-cpp@v1.4.0
+        with:
+          compiler: llvm
+
+      - name: Compile all C/C++ files
+        run: |
+          find actividades/ -name "*.cpp" > files.txt
+          clang++ -std=17 -Wall -Wextra -Werror -o /dev/null @files.txt -j$(nproc)
