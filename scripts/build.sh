@@ -7,6 +7,6 @@ for file in $FILES; do
 done
 
 # Compile all files in parallel
-batcat compile_commands.txt | parallel -j$(nproc)
+cat compile_commands.txt | parallel -j$(nproc)
 
 rm compile_commands.txt
